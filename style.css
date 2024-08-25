@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-decoration: none;
+  list-style: none;
+  letter-spacing: 0.2px;
+}
+:root {
+  --padding: 1rem 10rem;
+  --widthLg: 80%;
+}
+.container {
+  /* padding: var(--padding); */
+  width: var(--widthLg);
+  margin: 0 auto;
+}
+/* Navbar */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+  padding: 0 2rem;
+}
+/* Cursor */
+#box {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  z-index: 10000;
+  position: fixed;
+  pointer-events: none;
+}
+/* Text */
+#text {
+  opacity: 0;
+}
+.overlay {
+  height: 400px;
+  width: 700px;
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+}
+/* Home */
+.home {
+  font-size: 5.5rem;
+  width: 50%;
+  height: calc(100vh - 100px);
+  margin-left: 10% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video_container video {
+  position: relative;
+  width: 9.2rem;
+  height: 5.5rem;
+  margin: 0 1rem 0 0;
+  overflow: hidden;
+  transform: translateZ(0);
+  border-radius: 1000px;
+  object-fit: cover;
+  transform: translateY(10%);
+}
+/* Full Screen Video */
+.full_screen-video {
+  width: 100%;
+  height: 100vh;
+}
+.full_screen-video video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+/* About */
+.about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about > * {
+  flex-basis: 100%;
+}
+.about video {
+  height: 70vh;
+  width: 70%;
+  object-fit: cover;
+}
+.about_desc {
+  font-size: 2rem;
+}
+.about_btn {
+  height: 10rem;
+  border: 1px solid #000;
+  width: max-content;
+  border-radius: 100px;
+  padding: 4rem 5rem;
+  margin-top: 4rem;
+}
+/* Philosophy */
+.philosophy {
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.philosophy_top {
+  font-size: 8rem;
+  width: 60%;
+}
+.philosophy_bottom {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.philosophy_bottom video {
+  height: 70vh;
+  width: 70%;
+}
+.philosophy_bottom > * {
+  flex-basis: 100%;
+}
+.philosophy_bottom_right {
+  padding-right: 10rem;
+  font-size: 1.3rem;
+}
