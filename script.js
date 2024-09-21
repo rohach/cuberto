@@ -80,3 +80,15 @@ function mouseDetail() {
     });
   });
 }
+
+function videoFollower() {
+  var video = document.querySelector(".full_screen-video");
+  video.addEventListener("mousemove", function (dets) {
+    gsap.to(video, {
+      duration: 2,
+      x: dets.x,
+      y: dets.y,
+      ease: "elastic.out(1,0.75)",
+    });
+  });
+}

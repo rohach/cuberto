@@ -16,6 +16,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.css
+"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Cursor -->
@@ -43,6 +49,7 @@
       </div>
       <div class="full_screen-video">
         <video autoplay muted loop src="video/short.mp4"></video>
+        <div class="video_cursor"></div>
       </div>
       <div class="about container">
         <div class="about_video">
@@ -52,6 +59,160 @@
           Cuberto is a leading digital product agency focused on branding, UI/UX
           design, mobile, and web development.
           <div class="about_btn">What we do</div>
+        </div>
+      </div>
+      <div class="resource_container">
+        <div class="container resource">
+          <div class="resource_top">
+            Featured
+            <span class="video_container project_video">
+              <video autoplay loop muted src="video/projects.mp4"></video>
+              <span style="font-style: italic"> projects </span></span
+            >
+          </div>
+
+          <div class="resource_bottom">
+            <div class="resources">
+              <div class="resources_left">
+                <div class="resources_container">
+                  <div class="resources_video">
+                    <video
+                      src="./video/cover (1).mp4"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
+                  </div>
+                  <div class="resources_heading">
+                    <b>Punto Pago</b> – The First Super-App in Latin America
+                  </div>
+                </div>
+                <div class="resources_container">
+                  <div class="resources_video">
+                    <video
+                      src="./video/cover (2).mp4"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
+                  </div>
+                  <div class="resources_heading">
+                    <b>FlipaClip</b> – The best tool for stop-motion animation
+                  </div>
+                </div>
+                <div class="resources_container">
+                  <div class="resources_video">
+                    <video
+                      src="./video/cover (3).mp4"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
+                  </div>
+                  <div class="resources_heading">
+                    <b>Kelvin Zero</b> – A digital product for passwordless
+                    authentication
+                  </div>
+                </div>
+                <div class="resources_container">
+                  <div class="resources_video">
+                    <video
+                      src="./video/cover (4).mp4"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
+                  </div>
+                  <div class="resources_heading">
+                    <b>Riyadh</b> – Official website of Riyadh, Saudi Arabia's
+                    capital
+                  </div>
+                </div>
+                <div class="resources_container">
+                  <div class="resources_video">
+                    <video
+                      src="./video/cover (5).mp4"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
+                  </div>
+                  <div class="resources_heading">
+                    <b>Magma</b> – The ultimate tool for building in the Web3
+                    era
+                  </div>
+                </div>
+              </div>
+              <div class="resources_right">
+                <div class="resources_container">
+                  <div class="resources_video">
+                    <video
+                      src="./video/cover (6).mp4"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
+                  </div>
+                  <div class="resources_heading">
+                    <b>Qvino</b> – Wine marketplace with interactive learning
+                  </div>
+                </div>
+                <div class="resources_container">
+                  <div class="resources_video">
+                    <video
+                      src="./video/cover (7).mp4"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
+                  </div>
+                  <div class="resources_heading">
+                    <b>Zelt</b> – Run HR, IT & Finance in one place
+                  </div>
+                </div>
+                <div class="resources_container">
+                  <div class="resources_video">
+                    <video
+                      src="./video/cover (8).mp4"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
+                  </div>
+                  <div class="resources_heading">
+                    <b> Potion</b> – Sales tool for increasing conversions
+                  </div>
+                </div>
+                <div class="resources_container">
+                  <div class="resources_video">
+                    <video
+                      src="./video/cover (9).mp4"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
+                  </div>
+                  <div class="resources_heading">
+                    <b>Ferrumpipe </b> – Galvanized steel metal frame
+                    manufacturer
+                  </div>
+                </div>
+                <div class="resources_container">
+                  <div class="resources_video">
+                    <video
+                      src="./video/cover (10).mp4"
+                      autoplay
+                      loop
+                      muted
+                    ></video>
+                  </div>
+                  <div class="resources_heading">
+                    <b>Cisco </b> – Cloud based network management
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="philosophy container">
@@ -73,6 +234,28 @@
           </div>
         </div>
       </div>
+      <div class="resource_container">
+        <div class="container resource">
+          <div class="resource_top">
+            Development and design
+            <span style="font-style: italic"> resources </span>
+          </div>
+
+          <div class="resource_bottom">
+            <div class="resource_bottom_left"></div>
+            <div class="resource_bottom_right">
+              We regularly release design courses, offer advice to newbie
+              designers, walk you through creating awesome effects, and share
+              source files.
+              <div class="resource_btn">View all resources</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Video Bottom -->
+      <!-- <div class="bottom_video">
+        <video src="video/man.mp4" muted autoplay></video>
+      </div> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script
@@ -87,6 +270,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.js
+"></script>
     <script src="script.js"></script>
   </body>
 </html>

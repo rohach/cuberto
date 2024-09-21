@@ -37,6 +37,8 @@ nav ul {
   z-index: 10000;
   position: fixed;
   pointer-events: none;
+  margin-left: -0.2rem;
+  margin-top: -0.2rem;
 }
 /* Text */
 #text {
@@ -70,15 +72,37 @@ nav ul {
   object-fit: cover;
   transform: translateY(10%);
 }
+.project_video video {
+  position: relative;
+  width: 9.2rem;
+  height: 5.5rem;
+  margin: 0 1rem 0 0;
+  overflow: hidden;
+  transform: translateZ(0);
+  border-radius: 1000px;
+  object-fit: cover;
+  transform: translateY(10%);
+}
 /* Full Screen Video */
 .full_screen-video {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 .full_screen-video video {
   height: 100vh;
   width: 100%;
   object-fit: cover;
+}
+.video_cursor {
+  height: 70px;
+  width: 70px;
+  z-index: 9;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
 }
 /* About */
 .about {
@@ -105,6 +129,12 @@ nav ul {
   border-radius: 100px;
   padding: 4rem 5rem;
   margin-top: 4rem;
+}
+/* Projects */
+.projects {
+  background-color: #000;
+  height: 100%;
+  color: white;
 }
 /* Philosophy */
 .philosophy {
@@ -133,4 +163,74 @@ nav ul {
 .philosophy_bottom_right {
   padding-right: 10rem;
   font-size: 1.3rem;
+}
+/* Resource */
+.resource_container {
+  background-color: #161616;
+  border-top-left-radius: 4.5rem;
+  border-top-right-radius: 4.5rem;
+  height: max-content;
+  width: 100%;
+  color: white;
+  padding-bottom: 4rem;
+}
+.resource,
+.resource > * {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.resource_top {
+  height: 90vh;
+  font-size: 6rem;
+  width: 60%;
+}
+.resource_bottom {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.resource_bottom > * {
+  flex-basis: 100%;
+}
+.resource_btn {
+  border: 1px solid white;
+  width: max-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  margin-top: 2rem;
+}
+/* Bottom video */
+/* .bottom_video {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+} */
+/* Resources */
+.resources {
+  margin-top: -8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.resources_container {
+  margin-bottom: 5rem;
+}
+.resources_video {
+  height: 30%;
+  width: 100%;
+}
+.resources_video video {
+  border-radius: 50px;
+}
+.resources_heading {
+  margin-top: 2rem;
+  width: 60%;
+  font-size: 1.8rem;
+}
+.resources_right {
+  margin-top: 20%;
 }
